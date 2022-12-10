@@ -1,0 +1,33 @@
+---
+title: "summaryNA in seeNA"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{summaryNA}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# summaryNA
+
+In addition to the first three functions covered in the introduction, the function discussed in this part of the vignette will be the `summaryNA` function.
+This function can be thought as similar to the `summary` function used in base R. However, rather than using actual values, `summaryNA` displays summary
+statistics based on NA values.
+
+The output of summaryNA is a brief description of the data set and total missing values, and then a percentage calculation. There are also two tables that 
+accommodate the brief description. The first table looks column wise for missing values, whereas the second table looks for missing values row wise. It then 
+displays additional statistics of the data set.
+
+An example of how to use this function is below:
+
+```
+library(seeNA)
+data("emptyCars")
+summaryNA(emptyCars)
+```

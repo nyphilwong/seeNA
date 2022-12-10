@@ -1,0 +1,40 @@
+title: seeNA
+url: https://phillip-wong.github.io/seeNA/
+template:
+  params:
+    bootswatch: flatly
+reference:
+  - title: Functions Available
+    desc: ~
+    contents:
+      - '`seeNA`'
+      - '`makeNA`'
+      - '`fixNA`'
+      - '`summaryNA`'
+      - '`imputeNA`'
+  - title: Datasets Available
+    desc: ~
+    contents:
+      - '`emptyCars`'
+      - '`randomCars`'
+navbar:
+  type: standard
+  left:
+    - icon: fa-home
+      href: index.html
+  right:
+    - text: "Vignette"
+      icon: fas fa-book
+      menu:
+      -  text: Introduction to seeNA
+         href: articles/seeNA.html
+      -  text: Summary Statistics in seeNA
+         href: articles/summaryNA.html
+      -  text: Imputations in seeNA
+         href: articles/Imputations.html
+    - icon: fa-file-code-o
+      text: "Functions & Data"
+      href: reference/index.html
+    - icon: fa-github fa-lg
+      text: "Github"
+      href: https://github.com/phillip-wong/seeNA
